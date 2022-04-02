@@ -59,4 +59,3 @@ data_status = {
 }
 
 
-print(data_status)
