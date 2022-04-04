@@ -9,3 +9,5 @@ def write_text(text):
 def selfinit():
     """ Присваивание значения класса Menu в переменную menu """
     menu = Menu('')
+
+

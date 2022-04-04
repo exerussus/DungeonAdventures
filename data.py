@@ -1,6 +1,5 @@
 from location import *
 
-
 data_location = {
 
 

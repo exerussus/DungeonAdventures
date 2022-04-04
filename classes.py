@@ -1,4 +1,6 @@
 import time
+from data import *
+from items import *
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -19,9 +21,10 @@ class Text:
 
 class Menu:
 
-    def __init__(self, menu_coise):
-        '''Инициация класса Menu'''
-        self.menu_choise = menu_coise
+    def __init__(self, menu_choice):
+        """Инициация класса Menu"""
+
+        self.menu_choice = menu_choice
 
     def main(self):
         """ Запуск главного меню """
@@ -34,11 +37,25 @@ class Menu:
                   '4. Статистика\n'
                   '0. Выход\n')
             time.sleep(0.7)
-            self.menu_choise = input('Выберите действие: ')
+            self.menu_choice = input('Выберите действие: ')
             time.sleep(0.7)
-            if self.menu_choise not in ('1', '2', '3', '4', '0'):
+            if self.menu_choice not in ('1', '2', '3', '4', '0'):
                 time.sleep(0.7)
                 print('Пожалуйста, выберите действие из списка...')
                 continue
             else:
                 pass
+
+
+class Item:
+    """Управление предметами"""
+    def __init__(self, item):
+        self.item = item
+
+    def put_on(self):
+        """Надеть предмет"""
+        data_equipment[['equipment'][self.item['slot']]] = self.item
+
+    def take_off(self):
+        """Снять предмет"""
+        data_equipment[['equipment'][self.item['slot']]] = 'Пусто'
