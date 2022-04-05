@@ -81,19 +81,15 @@ class Item:
         """ Осмотр вещи """
         if data_characteristics['intellect'] < 5:
             data_items[self.item]['name'] = data_items[self.item]['description']['0']['name']
-        if data_characteristics['intellect'] < 10:
-            data_items[self.item]['name'] = data_items[self.item]['description']['5']['name']
-        if data_characteristics['intellect'] < 15:
-            data_items[self.item]['name'] = data_items[self.item]['description']['10']['name']
-        if data_characteristics['intellect'] > 14:
-            data_items[self.item]['name'] = data_items[self.item]['description']['15']['name']
-        if data_characteristics['intellect'] < 5:
             data_items[self.item]['about'] = data_items[self.item]['description']['0']['about']
         if data_characteristics['intellect'] < 10:
+            data_items[self.item]['name'] = data_items[self.item]['description']['5']['name']
             data_items[self.item]['about'] = data_items[self.item]['description']['5']['about']
         if data_characteristics['intellect'] < 15:
+            data_items[self.item]['name'] = data_items[self.item]['description']['10']['name']
             data_items[self.item]['about'] = data_items[self.item]['description']['10']['about']
         if data_characteristics['intellect'] > 14:
+            data_items[self.item]['name'] = data_items[self.item]['description']['15']['name']
             data_items[self.item]['about'] = data_items[self.item]['description']['15']['about']
 
     def take(self):
