@@ -2,7 +2,6 @@ from location import *
 
 data_location = {
 
-
     'location': {
         '1': l1,
         '2': l2,
@@ -32,7 +31,6 @@ data_equipment = {
     },
 }
 
-
 data_characteristics = {
 
     'strength': 1,
@@ -41,9 +39,7 @@ data_characteristics = {
     'intellect': 1,
     'luck': 1,
 
-
 }
-
 
 data_status = {
 
@@ -57,4 +53,11 @@ data_status = {
 
 }
 
+data_items = {
 
+}
+
+data_abc = {
+    'ABC': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+            'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+}
