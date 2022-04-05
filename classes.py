@@ -60,7 +60,18 @@ class Item:
 
     def take_off(self):
         """Снять предмет"""
-        data_equipment[['equipment'][self.item['slot']]] = 'Пусто'
+        old_item = data_equipment[['equipment'][self.item['slot']]]
+        data_equipment[['equipment'][self.item['slot']]] = data_items['Пусто']
+        empty_key = 1
         for slot in data_equipment['backpack']:
-            if data_equipment['backpack'][slot] == 'Пусто':
+            if empty_key == 1 and data_equipment['backpack'][slot] == data_items['Пусто']:
                 data_equipment['backpack'][slot] = self.item
+                empty_key = 0
+        if empty_key == 1:
+            while True:
+                answer = input('В рюкзаке нет места. Выбросить вещь?')
+                if answer == 'Да' or answer == 'да' or answer == 'ага' or answer == 'АГА':
+                    break
+                if answer == 'Нет' or answer == 'нет' or answer == 'не' or answer == 'Не':
+                    data_equipment[['equipment'][self.item['slot']]] = old_item
+                print('Пожалуйста, подтвердите, выкинуть вещь, или нет...')
