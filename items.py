@@ -1,6 +1,6 @@
 
 
-leather_head = {
+item_leather_head = {
 
     'id': '',
     'lvl': 1,
@@ -22,7 +22,7 @@ leather_head = {
 }
 
 
-leather_belts = {
+item_leather_belts = {
 
     'id': '',
     'lvl': 1,
@@ -43,7 +43,7 @@ leather_belts = {
 }
 
 
-example = {
+item_example = {
 
     'id': '',
     'lvl': 1,

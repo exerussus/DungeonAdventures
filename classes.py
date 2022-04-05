@@ -57,7 +57,7 @@ class Item:
         old_item = data_equipment[['equipment'][self.item['slot']]]
         data_equipment[['equipment'][self.item['slot']]] = self.item
 
-        data_equipment['backpack'][self.item] =    # дописать: удаление предмета из бэкпака
+        #data_equipment['backpack'][self.item] =    # дописать: удаление предмета из бэкпака
         for slot in data_equipment['backpack']:
             if data_equipment['backpack'][slot] == 'Пусто':
                 data_equipment['backpack'][slot] = old_item
