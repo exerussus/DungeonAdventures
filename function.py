@@ -13,7 +13,8 @@ def selfinit():
 
 
 def random_id_generation(item):
-
+    """ Генерация ключа новой вещи """
+    random_value = ''
     key = 1
     while key == 1:
         rand1 = random.choice(data_abc['ABC'])
@@ -29,3 +30,4 @@ def random_id_generation(item):
             data_items[random_value] = item
             key = 0
             break
+    return random_value
