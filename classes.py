@@ -1,6 +1,7 @@
 import time
 from data import *
 from items import *
+from function import *
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -48,18 +49,18 @@ class Menu:
 
 
 class Item:
-    """Управление предметами"""
+    """ Управление предметами """
     def __init__(self, item):
         self.item = item
 
     def put_on(self):
-        """Надеть предмет"""
+        """ Надеть предмет """
         old_item = data_equipment[['equipment'][self.item['slot']]]  # old_item = ключ уже надетой вещи
         data_equipment[['equipment'][self.item['slot']]] = self.item  # Вставляем в слот ключ вещи
         data_equipment['backpack'][self.item] = old_item   # Вставляем снятую вещь на место надетой в backpack
 
     def take_off(self):
-        """Снять предмет"""
+        """ Снять предмет """
         old_item = data_equipment[['equipment'][self.item['slot']]]
         data_equipment[['equipment'][self.item['slot']]] = data_items['Пусто']
         empty_key = 1
@@ -75,3 +76,27 @@ class Item:
                 if answer == 'Нет' or answer == 'нет' or answer == 'не' or answer == 'Не':
                     data_equipment[['equipment'][self.item['slot']]] = old_item
                 print('Пожалуйста, подтвердите, выкинуть вещь, или нет...')
+
+    def naming(self):
+        """ Осмотр вещи """
+        if data_characteristics['intellect'] < 5:
+            data_items[self.item]['name'] = data_items[self.item]['description']['0']['name']
+        if data_characteristics['intellect'] < 10:
+            data_items[self.item]['name'] = data_items[self.item]['description']['5']['name']
+        if data_characteristics['intellect'] < 15:
+            data_items[self.item]['name'] = data_items[self.item]['description']['10']['name']
+        if data_characteristics['intellect'] > 14:
+            data_items[self.item]['name'] = data_items[self.item]['description']['15']['name']
+        if data_characteristics['intellect'] < 5:
+            data_items[self.item]['about'] = data_items[self.item]['description']['0']['about']
+        if data_characteristics['intellect'] < 10:
+            data_items[self.item]['about'] = data_items[self.item]['description']['5']['about']
+        if data_characteristics['intellect'] < 15:
+            data_items[self.item]['about'] = data_items[self.item]['description']['10']['about']
+        if data_characteristics['intellect'] > 14:
+            data_items[self.item]['about'] = data_items[self.item]['description']['15']['about']
+
+    def take(self):
+        """ Получение предмета """
+        self.item = random_id_generation(self.item)
+        self.naming()
