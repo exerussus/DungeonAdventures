@@ -54,13 +54,9 @@ class Item:
 
     def put_on(self):
         """Надеть предмет"""
-        old_item = data_equipment[['equipment'][self.item['slot']]]
-        data_equipment[['equipment'][self.item['slot']]] = self.item
-
-        #data_equipment['backpack'][self.item] =    # дописать: удаление предмета из бэкпака
-        for slot in data_equipment['backpack']:
-            if data_equipment['backpack'][slot] == 'Пусто':
-                data_equipment['backpack'][slot] = old_item
+        old_item = data_equipment[['equipment'][self.item['slot']]]  # old_item = ключ уже надетой вещи
+        data_equipment[['equipment'][self.item['slot']]] = self.item  # Вставляем в слот ключ вещи
+        data_equipment['backpack'][self.item] = old_item   # Вставляем снятую вещь на место надетой в backpack
 
     def take_off(self):
         """Снять предмет"""
