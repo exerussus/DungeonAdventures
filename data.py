@@ -82,7 +82,7 @@ data_items = {
     'Пусто': {
         'id': '',
         'lvl': 0,
-        'type': 'armor',
+        'type': 'Пусто',
         'slot': 'Пусто',
         'name': 'Пусто',
         'slash_dmg': 0,
