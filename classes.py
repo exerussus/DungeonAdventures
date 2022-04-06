@@ -96,3 +96,9 @@ class Item:
         """ Получение предмета """
         self.item = random_id_generation(self.item)
         self.naming()
+
+    def delete(self):
+        data_items.pop(self.item)
+
+
+
