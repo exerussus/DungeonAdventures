@@ -100,5 +100,5 @@ class Item:
     def delete(self):
         data_items.pop(self.item)
 
-
+    def
 
