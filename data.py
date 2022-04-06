@@ -1,12 +1,12 @@
-from location import *
 
 data_location = {
 
     'location': {
-        '1': l1,
-        '2': l2,
+        '1': '',
+        '2': '',
     },
     'actually_location': ''
+
 }
 
 data_equipment = {
