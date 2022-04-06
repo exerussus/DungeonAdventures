@@ -47,6 +47,7 @@ class Menu:
             else:
                 pass
 
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 class Item:
     """ Управление предметами """
@@ -100,5 +101,15 @@ class Item:
     def delete(self):
         data_items.pop(self.item)
 
-    def
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+class Location:
+
+    def __init__(self, location):
+        self.location = location
+
+    def change(self):
+        """Изменяет локацию"""
+        data_location['actually_location'] = self.location
 
