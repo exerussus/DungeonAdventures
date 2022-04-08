@@ -133,6 +133,20 @@ data_abc = {
             'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
 }
 
+
+item_lvl_1 = {
+
+}
+
+item_lvl_2 = {
+
+}
+
+item_lvl_3 = {
+
+}
+
+
 data_location = {
 
     'location': {
