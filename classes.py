@@ -23,11 +23,6 @@ class Text:
 
 class Menu:
 
-    # def __init__(self, menu_choice):
-    #     """Инициация класса Menu"""
-    #
-    #     self.menu_choice = menu_choice
-
     def main(self):
         """ Запуск главного меню """
         while True:
@@ -53,8 +48,6 @@ class Menu:
 
 class Item:
     """ Управление предметами """
-    # def __init__(self, item):
-    #     self.item = item
 
     def put_on(self, item):
         """ Надеть предмет """
