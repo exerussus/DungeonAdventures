@@ -53,23 +53,23 @@ class Menu:
 
 class Item:
     """ Управление предметами """
-    def __init__(self, item):
-        self.item = item
+    # def __init__(self, item):
+    #     self.item = item
 
-    def put_on(self):
+    def put_on(self, item):
         """ Надеть предмет """
-        old_item = data_equipment[['equipment'][self.item['slot']]]  # old_item = ключ уже надетой вещи
-        data_equipment[['equipment'][self.item['slot']]] = self.item  # Вставляем в слот ключ вещи
-        data_equipment['backpack'][self.item] = old_item   # Вставляем снятую вещь на место надетой в backpack
+        old_item = data_equipment[['equipment'][item['slot']]]  # old_item = ключ уже надетой вещи
+        data_equipment[['equipment'][item['slot']]] = item  # Вставляем в слот ключ вещи
+        data_equipment['backpack'][item] = old_item   # Вставляем снятую вещь на место надетой в backpack
 
-    def take_off(self):
+    def take_off(self, item):
         """ Снять предмет """
-        old_item = data_equipment[['equipment'][self.item['slot']]]
-        data_equipment[['equipment'][self.item['slot']]] = data_items['Пусто']
+        old_item = data_equipment[['equipment'][item['slot']]]
+        data_equipment[['equipment'][item['slot']]] = data_items['Пусто']
         empty_key = 1
         for slot in data_equipment['backpack']:
             if empty_key == 1 and data_equipment['backpack'][slot] == data_items['Пусто']:
-                data_equipment['backpack'][slot] = self.item
+                data_equipment['backpack'][slot] = item
                 empty_key = 0
         if empty_key == 1:
             while True:
@@ -77,30 +77,30 @@ class Item:
                 if answer == 'Да' or answer == 'да' or answer == 'ага' or answer == 'АГА':
                     break
                 if answer == 'Нет' or answer == 'нет' or answer == 'не' or answer == 'Не':
-                    data_equipment[['equipment'][self.item['slot']]] = old_item
+                    data_equipment[['equipment'][item['slot']]] = old_item
                 print('Пожалуйста, подтвердите, выкинуть вещь, или нет...')
 
-    def naming(self):
+    def naming(self, item):
         """ Осмотр вещи """
         if data_characteristics['intellect'] < 5:
-            data_items[self.item]['name'] = data_items[self.item]['description']['0']['name']
-            data_items[self.item]['about'] = data_items[self.item]['description']['0']['about']
+            data_items[item]['name'] = data_items[item]['description']['0']['name']
+            data_items[item]['about'] = data_items[item]['description']['0']['about']
         if data_characteristics['intellect'] < 10:
-            data_items[self.item]['name'] = data_items[self.item]['description']['5']['name']
-            data_items[self.item]['about'] = data_items[self.item]['description']['5']['about']
+            data_items[item]['name'] = data_items[item]['description']['5']['name']
+            data_items[item]['about'] = data_items[item]['description']['5']['about']
         if data_characteristics['intellect'] < 15:
-            data_items[self.item]['name'] = data_items[self.item]['description']['10']['name']
-            data_items[self.item]['about'] = data_items[self.item]['description']['10']['about']
+            data_items[item]['name'] = data_items[item]['description']['10']['name']
+            data_items[item]['about'] = data_items[item]['description']['10']['about']
         if data_characteristics['intellect'] > 14:
-            data_items[self.item]['name'] = data_items[self.item]['description']['15']['name']
-            data_items[self.item]['about'] = data_items[self.item]['description']['15']['about']
+            data_items[item]['name'] = data_items[item]['description']['15']['name']
+            data_items[item]['about'] = data_items[item]['description']['15']['about']
 
-    def take(self):
+    def take(self, item):
         """ Получение предмета """
-        self.item = random_id_generation(self.item)
-        self.naming()
+        item = random_id_generation(item)
+        self.naming(item)
 
-    def delete(self):
+    def delete(self, item):
         data_items.pop(self.item)
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
