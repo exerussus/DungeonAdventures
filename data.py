@@ -1,14 +1,4 @@
 
-data_location = {
-
-    'location': {
-        '1': '',
-        '2': '',
-    },
-    'actually_location': ''
-
-}
-
 data_equipment = {
 
     'armor': {
@@ -146,3 +136,660 @@ data_abc = {
 
 
 
+
+
+
+
+data_location = {
+
+    'location': {
+        '1': {
+            'story': 'Вы быстро идете вперед и вскоре оказываетесь в лесу. '
+                     'Даже странно, что о нем рассказывают столько страшных'
+                     ' и невероятных историй: таинственный, зачарованный,'
+                     ' с множеством ловушек и опасностей. Но все тихо и спокойно,'
+                     ' высокие и могучие деревья справа и слева пропускают много солнечного света,'
+                     ' дорога прямая и ровная, и вы расслабляетесь. Веселое щебетание птиц'
+                     ' убеждает в том, что поблизости нет никакой опасности. '
+                     'Примерно через три четверти часа вы доходите до развилки. '
+                     'Путь раздваивается. Теперь вам надо принять первое решение -- какую дорогу выбрать.'
+                     '1. По правой дороге'
+                     '2. По левой дороге',
+            'first': '86',
+            'second': '110',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '4': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '5': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '6': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '7': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '8': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '9': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '10': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '11': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '12': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '13': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '14': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '15': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '16': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '17': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '18': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '19': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '20': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '21': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '22': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '23': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '24': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '25': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '26': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '27': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '28': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '29': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '30': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '31': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '32': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '2': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+        '3': {
+            'story': '',
+            'first': '',
+            'second': '',
+            'another': ''
+        },
+    },
+    'actually_location': ''
+
+}
