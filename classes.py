@@ -5,6 +5,7 @@ from function import *
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+
 class Text:
 
     def __init__(self, text):
@@ -22,10 +23,10 @@ class Text:
 
 class Menu:
 
-    def __init__(self, menu_choice):
-        """Инициация класса Menu"""
-
-        self.menu_choice = menu_choice
+    # def __init__(self, menu_choice):
+    #     """Инициация класса Menu"""
+    #
+    #     self.menu_choice = menu_choice
 
     def main(self):
         """ Запуск главного меню """
@@ -38,9 +39,9 @@ class Menu:
                   '4. Статистика\n'
                   '0. Выход\n')
             time.sleep(0.7)
-            self.menu_choice = input('Выберите действие: ')
+            menu_choice = input('Выберите действие: ')
             time.sleep(0.7)
-            if self.menu_choice not in ('1', '2', '3', '4', '0'):
+            if menu_choice not in ('1', '2', '3', '4', '0'):
                 time.sleep(0.7)
                 print('Пожалуйста, выберите действие из списка...')
                 continue
@@ -48,6 +49,7 @@ class Menu:
                 pass
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 
 class Item:
     """ Управление предметами """
