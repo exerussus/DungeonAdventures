@@ -150,13 +150,17 @@ data_location = {
                      '2. По левой дороге',
             'first': '86',
             'second': '110',
-            'another': ''
+            'another': '',
+            'inspection': {
+                'true': '',
+                'false': '',
+            }
         },
         '2': {
             'story': '',
             'first': '',
             'second': '',
-            'another': ''
+            'another': '',
         },
         '3': {
             'story': '',
