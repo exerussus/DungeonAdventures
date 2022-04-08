@@ -160,7 +160,7 @@ data_location = {
             'story': '',
             'first': '',
             'second': '',
-            'another': '',
+            'another': ''
         },
         '3': {
             'story': '',
