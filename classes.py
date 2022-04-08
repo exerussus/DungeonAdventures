@@ -106,11 +106,12 @@ class Item:
 
 class Location:
 
-    def __init__(self, location):
-        self.location = location
+    # def __init__(self, decision):
+    #     self.decision = decision
 
-    def change(self):
+    def change(self, decision):
         """Изменяет локацию"""
-        data_location['actually_location'] = self.location
+        actually = data_location['actually_location']
+        data_location['actually_location'] = data_location['location'][actually][decision]
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
