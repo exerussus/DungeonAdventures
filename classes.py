@@ -101,7 +101,7 @@ class Item:
         self.naming(item)
 
     def delete(self, item):
-        data_items.pop(self.item)
+        data_items.pop(item)
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
