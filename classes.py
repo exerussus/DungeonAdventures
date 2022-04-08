@@ -114,7 +114,7 @@ class Location:
     def change(self, decision):
         """Изменяет локацию"""
         actually = data_location['location']['actually_location']
-        data_location['actually_location'] = data_location['location'][actually][decision]
+        data_location['location']['actually_location'] = data_location['location'][actually][decision]
 
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

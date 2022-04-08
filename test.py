@@ -1,4 +1,11 @@
 from data import data_location
 
-actually = data_location['location']['actually_location']
-print(data_location['location'][actually])
+
+def change(decision):
+    """Изменяет локацию"""
+    actually = data_location['location']['actually_location']
+    data_location['location']['actually_location'] = data_location['location'][actually][decision]
+
+
+change('first')
+print(data_location['location']['actually_location'])
