@@ -27,7 +27,7 @@ class Menu:
         """ Запуск главного меню """
         while True:
             time.sleep(0.7)
-            print('*** DUNGEON MUSTERS ***\n'
+            print('*** DUNGEON ADVENTURES ***\n'
                   '1. Новая игра\n'
                   '2. Загрузка\n'
                   '3. Настройки\n'
